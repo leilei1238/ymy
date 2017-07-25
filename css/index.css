@@ -1,0 +1,66 @@
+/*change bootstrap*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background: #e34634;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.navbar{
+    margin-bottom:0;
+    background: #fff;
+    z-index: 99;
+    width: 100%;
+}
+
+.navbar-brand{
+    padding:0;
+}
+@media (min-width:768px) {
+    .navbar{
+        padding: 25px;
+    }
+}
+@media (max-width: 768px){
+    .navbar-brand img{
+        width: 80%;
+        padding:10px;
+    }
+}
+
+/*banner éƒ¨åˆ†*/
+.kecheng .tip{
+    color: #e24232;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.mimi p{
+    font-size: 18px;
+}
+.panel-heading{
+    background: mediumpurple;
+}
+.kecheng .panel-body{
+    line-height: 30px;
+    font-size: 16px;
+}
+.kecheng button{
+    margin-top: 10px;
+}
+.modal-body tabel td{
+    line-height: 30px;
+    height: 30px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border:none;
+}
+.xiangmu .txt-title{
+    width: 100px;
+    height: 100px;
+    background: #e24232;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+}
+.xiangmu .txt-sm{
+    font-size: 16px;
+}

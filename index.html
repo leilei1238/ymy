@@ -1,11 +1,737 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>ymy-app</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="description" content="圆梦源前端培训"/>
+    <title>圆梦源前端培训</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+    .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+
+        width: 100%;
+    }
+
+    img.lazy {
+        background: url(img/loading.gif) 50% no-repeat;
+    }
+</style>
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="40">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top"><img class="img-responsive" src="img/logo.png" alt="圆梦源"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="page-scroll">
+                    <a href="#pageTop">首页</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio">课程大纲</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#readmore">就业保障</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#demo">实战教学</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">讲师实力</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">学校地址</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header id="pageTop">
+    <div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div id="my-carousel" class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="lazy" src="./img/banner-01.jpg">
+                </div>
+                <div class="item">
+                    <img class="lazy" src="./img/banner-02.jpg">
+                </div>
+                <div class="item">
+                    <img class="lazy" src="./img/banner-03.jpg">
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="kecheng">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>课程大纲</h2>
+                <hr class="star-primary">
+                <p class="tip">百天实战教学 = 2年工作经验</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">零基础班(HTML+CSS)</div>
+                        <div class="panel-body">
+                            帮助0基础想转行的同学，和已经工作但技术不扎实的同学，快速入门，学完此阶段要求大家能参与公司页面的制作，真正开始干活；<br>
+                            <button type="button" class="btn btn-default">点击了解更多...</button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">高薪就业(JS+H5+NODE)</div>
+                        <div class="panel-body">
+                            房子能盖多高，取决于地基；前端的路能走多远，取决于原生javascript，此阶段帮你打通前端通往后台的任督二脉；让你真正的成为全栈工程师；
+                            <button type="button" class="btn btn-default">点击了解更多...</button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">前沿技术(react+vue+小程序)</div>
+                        <div class="panel-body">
+                            在打通前后台的任督二脉后，此部分课程带你实战前端流行框架，进行前端自动化，工程化开发；通过学习优秀的框架，把我们所有知识更系统的运用；
+                            <button type="button" class="btn btn-default">点击了解更多...</button>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- More Section -->
+<section class="success" id="readmore">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>就业保障</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+                <h3>4个月成为全栈JS工程师的秘密</h3>
+            </div>
+        </div>
+        <br/>
+        <div class="row mimi">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <!--<img src="./img/pic_02.png">-->
+                    <img class="lazy" src="./img/blank.gif" data-echo="./img/pic_02.png">
+
+                    <div class="caption">
+                        <h3>担心学不会</h3>
+                        <p>我们免费试听一周，而且边学习边考试，每周都有对应的测试题，帮助你不断的查缺补漏，而且我们小班制，老师手把手的教，只要和老师一起努力，不但学的会，而且学的更好</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <!--<img src="./img/pic_04.png">-->
+                    <img class="lazy" src="./img/blank.gif" data-echo="./img/pic_04.png">
+
+                    <div class="caption">
+                        <h3>担心找不到工作</h3>
+                        <p>就业是我们的强项，我们会聘请大型公司的招聘顾问，专门进行就业辅导，而且上课实战，融入大量BAT真题，所以平均就业工资超过12K。不但让你找到工作，还要能胜任工作。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <!--<img src="./img/pic_06.png">-->
+                    <img class="lazy" src="./img/blank.gif" data-echo="./img/pic_06.png">
+
+                    <div class="caption">
+                        <h3>担心学历低或年龄大</h3>
+                        <p>
+                            学员中29%本科,50%的大专,10%的初或高中,1%的硕士;最大年龄44岁最小年龄17岁平均年龄26.5岁,请对号入座。44岁的老大哥通过两轮学习，找到11K的薪资；所以年龄只是逃避努力的借口；</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img class="lazy" src="./img/blank.gif" data-echo="./img/pic_08.png">
+                    <div class="caption">
+                        <h3>担心学费交不起</h3>
+                        <p>我们的学费，确实是现在市场价的一半，只有
+                            <mark class="text-danger">9800</mark>
+                            元，只有我们敢在官网写学费，因为我们专注前端教育，给所有想要起飞的学员以最低的成本学到最高质量的课程；所以，你也应该给青春一个机会！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Demo Section -->
+<section id="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>圆梦源项目实战教学+小班教学</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <h3 class="text-center">项目教学法，学习同攒经验</h3>
+
+        <h3 class="text-center text-danger">让你4个月就拥有2年以上项目经验</h3>
+        <br>
+        <p class="text-center">圆梦源采用全真商业项目教学+小班授课(每班10-20人左右)，每节课布置作业，学习同时攒经验，学习中参与名企项目开发设计，
+            模拟公司项目流程，以实现知名的网站/APP前端为检验学习成果的标准，积累大牛级的项目经验！</p>
+        <br>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">第一阶段：前端页面基础</div>
+                <div class="panel-body">
+                    <p>通过真实线上项目的开发，让同学具备快速开发页面的能力</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-5">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img src="./img/01.png">-->
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/01.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-5">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img src="./img/03.png">-->
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/03.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">第二阶段：JS高级程序设计</div>
+                <div class="panel-body">
+                    <p>
+                        主要涉及：面向对象思想，并用各种设计思想+JS源码来开发jQuery的几个核心库：事件库，运动库，ajax+jsonp库，DOM库等，并用所学html5+css3+bootstrap+各种插件进行响应式开发，移动端开发等</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img style="width:90%" class="lazy" src="./img/blank.gif" data-echo="./img/04.png">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/02.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/08.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/05.png">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img style="width:30%" src="./img/06.png">-->
+                                <img style="width:30%" class="lazy" src="./img/blank.gif" data-echo="./img/06.png">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img style="width:30%" class="lazy" src="./img/blank.gif" data-echo="./img/07.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">第三阶段：NodeJS全栈开发</div>
+                <div class="panel-body">
+                    <p>用MVC思想开发前后台全栈项目，自己写服务器，接口，所有数据的存取也用自己封装的DAO层的数据库；真正实现一站式前后台开发;通过项目熟练使用后台常用框架；</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-5">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/09.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-md-5">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/10.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">第四阶段：流行框架开发移动端webApp</div>
+                <div class="panel-body">
+                    <p>熟练使用前端流行框架，带着大家用react写动效简历，用vue开发外卖网站等，让大家学会使用前端流行框架；熟练自动化，工程化开发</p>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img src="./img/11.jpg">-->
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/11.jpg">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img src="./img/12.jpg">-->
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/12.jpg">
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-md-4">
+                            <a href="javascript:void(0)" class="thumbnail">
+                                <!--<img src="./img/13.jpg">-->
+                                <img class="lazy" src="./img/blank.gif" data-echo="./img/13.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>讲师介绍</h2>
+                <hr class="star-light">
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="media">
+                <div class="col-md-4">
+                    <a href="javascript:void(0)">
+                        <!--<img style="width:300px;" class="media-object" src="./img/lei.jpg">-->
+                        <img style="width:300px;" class="lazy media-object" src="./img/blank.gif"
+                             data-echo="./img/lei.jpg">
+                    </a>
+
+                </div>
+
+                <div class="col-md-8">
+                    <br>
+                    <h4 class="media-heading">咦！竟然是女讲师！</h4>
+                    <h4>....而且还有个宝贝! 😯😓</h4>
+                    <br>
+                    <p>没错，是女讲师，我叫张蕾；</p>
+                    <p>作为一个名在前端项目开发中摸爬滚打7年的女汉子，先后在中国银行，新浪，宜信创新工厂一直从事开发工作;</p>
+                    <p>
+                        我自认自己一定不是大神，但却是会讲课的大神！我创办圆梦源的初衷就是让外地跟我一样来北京追梦的人，可以用最低的学习成本学会最高质量课程，所以，我收费很低，市场价普遍20000左右，而我只有9800；
+                        <mark>注意：低价买好课程在我这里一定实用</mark>
+                    </p>
+                    <p>对学员要求：只要你不放弃，我就一定能把你教会，让你找到好工作</p>
+                    <p>从始至终，我都是靠自己的行动，去影响我的孩子和我的学生，因为多说无意，如果你的领头羊比你优秀还比你努力，那你有放松的理由吗？</p>
+                    <p>所以，给你的青春一个放飞的机会吧，也许真的飞起来呢？😄</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>联系我们</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-lg-offset-1">
+                <form name="sentMessage" id="contactForm" class="form-horizontal">
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Name:</label>
+                            <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                                   value="名字: 圆梦源前端全栈培训">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" value="地址: 北京市通州区通胡大街78号 京贸中心1103C">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" value="电话/微信: 18611959267">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" value="QQ: 397536369">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" value="备注：有几个住宿费350元的名额">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!--<img style="width:100%;" src="./img/map.png" alt="">-->
+                <img style="width:100%;" class="lazy" src="./img/blank.gif" data-echo="./img/map.png" alt="map">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <p><img style="width:40%" class="lazy" src="./img/blank.gif" data-echo="./img/meweixin.png" alt="">
+                        </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>扫码加我</h3>
+                    <p><i class="glyphicon glyphicon-chevron-left"></i>
+                        <img src="img/logo2.png" alt="">
+                        <i class="glyphicon glyphicon-chevron-right"></i></p>
+                </div>
+
+                <div class="footer-col col-md-4">
+                    <p><img style="width:40%" class="lazy" src="./img/blank.gif" data-echo="./img/leiweixin.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    © 北京圆梦源教育科技有限公司 2017 - 2018 · 京 ICP 备 17042661 号
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- Portfolio Modals -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>0基础轻松入门 : html+css</h2>
+                        <hr class="star-primary">
+                        <h3>PC端网站布局</h3>
+                        <br>
+                        <h4>通过如下知识点的学习，实战两个项目</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">前端开发环境介绍（DreamWeaver、Sublime)</li>
+                            <li class="list-group-item">CSS盒模型,选择器，继承</li>
+                            <li class="list-group-item">切图工具（PS/FW）</li>
+                            <li class="list-group-item">溢出即元素类型，浮动</li>
+                            <li class="list-group-item">浏览器兼容与宽高自适应</li>
+                            <li class="list-group-item">定位，锚点与透明</li>
+                            <li class="list-group-item">图片整合，雪碧图处理，CSS Hack</li>
+                            <li class="list-group-item">表格，表单</li>
+                            <li class="list-group-item">整站规划，CSS优化，Flash动画</li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>高薪就业 打通前后台任督二脉</h2>
+                        <hr class="star-primary">
+                        <h3>最深入的原生JS课程体系及全面的webApp开发</h3>
+                        <br>
+                        <h4>JS基础知识公开课</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">JavaScript核心基础知识:变量、数据类型、操作语句、函数、数组及算法、 DOM、String、Math、Date…
+                            </li>
+                            <li class="list-group-item">BAT公司的经典面试题分析</li>
+                            <li class="list-group-item">算法常用的排序：冒排，插排，快排…</li>
+                            <li class="list-group-item">项目中常用案例实战开发:选项卡、随机验证码、倒计时、九九乘法表等</li>
+                        </ul>
+
+                        <h4>第一周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">git/gitHub讲解，模拟真实项目团队配合开发流程方式;markdowm编写技术 文档，沉淀技术资料等</li>
+                            <li class="list-group-item">原生JS从基础到深入:作用域、闭包、THIS、面向对象设计思想、CALL/APPLY</li>
+                            <li class="list-group-item">大量面试真题中涉及作用域和面向对象的知识点讲解和考察</li>
+                            <li class="list-group-item">es6语法和babel 编译；体验es6中面向对象的使用</li>
+                        </ul>
+                        <h4>第二周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">J面向对象的深入（涉及this及this修改的方法及区别等）实战：商品排序</li>
+                            <li class="list-group-item">初步体验ajax前后台交互，绑定数据，回流和重绘等</li>
+                            <li class="list-group-item">正则基础到实战；正则和面向对象配合</li>
+                        </ul>
+                        <h4>第三周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">JS盒子模型常用属性；同步异步编程；</li>
+                            <li class="list-group-item">DOM深入、编写兼容所有浏览器的DOM库封装</li>
+                            <li class="list-group-item">实战：图片延迟加载，回到顶部（随时停下版+立即隐藏版），瀑布流，图片懒加载，图片延迟加载思想完成花瓣网实战案例</li>
+                        </ul>
+                        <h4>第四周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">定时器和回调函数深入解读</li>
+                            <li class="list-group-item">轮播图案例的实现以及组件封装</li>
+                            <li class="list-group-item">以组件思想-封装运动库；</li>
+                            <li class="list-group-item">jQuery常用方法使用及源码解读，使用JQ完成一些经典的案例
+                            </li>
+                            <li class="list-group-item">用jQuery重写我们以前用原生js写过的各种动效交互；真正明白jquery的优势和原生js的重要性</li>
+                        </ul>
+                        <h4>第五周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">事件对象及基础知识、事件冒泡传播、事件委托、以及DOM2事件兼容处理</li>
+                            <li class="list-group-item">通过实战，熟练事件委托和事件冒泡的运用，熟练鼠标坐标的运用：小米购物车，多级菜单，百度搜索框，淘宝商品页放大镜
+                                （固定比例计算+计算比例计算）
+                            </li>
+                            <li class="list-group-item">封装事件库，封装订阅发布版的事件库</li>
+                            <li class="list-group-item">用自己封装的事件库封装拖拽组件</li>
+                        </ul>
+                        <h4>第六周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">用es6+面向对象+订阅发布，封装一个功能强大的拖拽组件</li>
+                            <li class="list-group-item">利用拖拽组件实现chrome照片墙</li>
+                            <li class="list-group-item">用jsonp重写百度搜索框</li>
+                            <li class="list-group-item">封装一个可以跨域的ajax库：具备jsonp跨域功能，和前后台数据交互功能，从而明白jQuery中 $.ajax的实现原理
+                            </li>
+                        </ul>
+                        <h4>第七周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">html5新增标签，音频视频的富媒体标签的使用，storage本地存储的详细解读，图标字体的使用…</li>
+                            <li class="list-group-item">css3新增功能介绍，过渡transition和变形的使用，animate关键帧的使用…</li>
+                            <li class="list-group-item">开始使用第三方插件 fullpage.js；</li>
+                            <li class="list-group-item">实战：用html5+css3+fullpage.js开发一个动态的网站</li>
+                        </ul>
+                        <h4>第八周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">实战：响应式开发页面:用bootstrap+html5+css3 实现响应式布局和开发，开发某金融网站</li>
+                            <li class="list-group-item">实战：纯移动端页面:利用rem布局+jquery中的订阅发布+less，完成QQ音乐页面的制作；</li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="modal-body">
+                        <h2>彻底掌握后台和前端的前沿技术</h2>
+                        <br>
+                        <hr class="star-primary">
+                        <br>
+                        <h3>原生Node.js和流行框架实战</h3>
+                        <br>
+                        <h4>第一周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">原生Node.js和企业级项目实战</li>
+                            <li class="list-group-item">Node.js简介和特性，http模块和 url模块，fs模块详解；静态资源文件管理</li>
+                            <li class="list-group-item">文件夹模块和package文件，post请求，ejs模版使用等</li>
+                            <li class="list-group-item">express框架，路由，中间件–实战：小相册</li>
+                            <li class="list-group-item">mongodb的安装和使用（增删改查数据等）</li>
+                            <li class="list-group-item">find函数封装和分页，及cookie，session知识讲解，实战：留言板</li>
+                            <li class="list-group-item">md5加密；图像处理和裁切； 实战：圆梦源论坛（涉及：注册，登陆，上传头像，用ajax配合，实现分页，用户列表等功能）</li>
+                            <li class="list-group-item">mongoose知识讲解，和websocket案例实战；</li>
+                        </ul>
+                        <h4>第二周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">react环境配置与调试技巧</li>
+                            <li class="list-group-item">
+                                熟练工程化、自动化开发：搭建项目基础架构用webpack2，自己手动熟练配置webpack.config.js，对我们项目进行编译、打包、压缩…
+                            </li>
+                            <li class="list-group-item">react组件开发和react多组件嵌套</li>
+                            <li class="list-group-item">
+                                JSX中常用的表达式和注释、生命周期、React属性和事件、父子组件的数据传递、组件的refs、react-router和样式合并打包等
+                            </li>
+                            <li class="list-group-item">项目实战 :用所学react知识+antdesign+react的运动写个人简历网站；</li>
+                            <li class="list-group-item">项目实战:聘请企业开发人员过来给大家进行企业项目的演练</li>
+                        </ul>
+
+                        <h4>第三周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">vue 基础，事件和数据交互</li>
+                            <li class="list-group-item">vue 生命周期，计算属性</li>
+                            <li class="list-group-item">实战：购物车</li>
+                            <li class="list-group-item">实战：留言框；涉及知识点:前端vue,后台express+mongoose+body-parser插件的使用等</li>
+                            <li class="list-group-item">vue 过滤器、指令、动画</li>
+                            <li class="list-group-item">vue组件详细解读：全局组件、局部组件、父子组件、动态组件展示、插槽 slot…</li>
+                            <li class="list-group-item">vue数据传递：父子组件数据传递，兄弟组件数据传递、数据同步、数据不同步…</li>
+                            <li class="list-group-item">vue-router ,vue-router+webpack2的自动化搭建，热加载…</li>
+                            <li class="list-group-item">vue-cli脚手架的使用（但我还是建议自己熟练搭建工程化开发）…</li>
+                            <li class="list-group-item">vue项目实战</li>
+                        </ul>
+                        <h4>第四周</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item">进行知识点梳理和复习</li>
+                            <li class="list-group-item">BAT面试题讲解</li>
+                            <li class="list-group-item">react组件开发和react多组件嵌套</li>
+                            <li class="list-group-item">就业指导：聘请大公司负责招聘的人来给同学们讲解面试知识点</li>
+                            <li class="list-group-item">负责招聘的技术官会给大家演示前端全栈的知识树</li>
+                            <li class="list-group-item">演示优秀的个人简历</li>
+                            <li class="list-group-item">帮助大家建立个人简历和心理辅导</li>
+                            <li class="list-group-item">后期不断会有技术分享，给同学们免费更新技术，比如小程序等</li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/echo.min.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<!--<script src="js/classie.js"></script>-->
+<!--<script src="js/cbpAnimatedHeader.js"></script>-->
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<!--script src="js/contact_me.js"></script-->
+
+<!-- Custom Theme JavaScript -->
+<script src="js/freelancer.js"></script>
+
+<script type="text/javascript">
+  $('.nav-pills').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  Echo.init({
+    offset: 0,
+    throttle: 0
+  });
+</script>
+</body>
+
 </html>
